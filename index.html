@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
+  <link rel="stylesheet" href="styles.css">
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@600;800&display=swap" rel="stylesheet">
+  <title>Interactive pricing component</title>
+</head>
+
+<body>
+
+
+  <div class="header">
+    <h1>Simple, traffic-based pricing</h1>
+    <p class="signUp">Sign-up for our 30-day trial. No credit card required.</p>
+    <img class="circles" src="images/pattern-circles.svg" alt="circle-img">
+  </div>
+
+  <main class="shadow p-3">
+    <div class="pricePerPageViews">
+      <p class="pageviewsClass"><span class="viewChange">100K </span> PAGEVIEWS</p>
+      <p class="priceClass"><span class="priceChange"> $16.00 </span>/ month</p>
+    </div>
+
+    <div class="range">
+      <label class="sliderBar" for="customRange"></label>
+      <input type="range" class="custom-range" min="0" max="4" id="customRange">
+      <p class="priceClassMobile"><span class="priceChangeMobile"> $8.00 </span>/ month</p>
+    </div>
+
+    <div class="billingToggle">
+      <span class="monthlyBilling">Monthly Billing</span>
+      <label class="switch"><input id="switchMode" value="press" type="checkbox">
+        <span class="slider round"></span>
+      </label>
+      <span class="yearlyBilling">Yearly Billing</span> <a type="button" class="btn btn-sm discount25 disabled">25% discount <a type="button" class=" btn btn-sm shortTextDiscount25 disabled">25%</a>
+    </div>
+    <hr>
+    <div class="attributes row">
+      <ul class="col">
+
+        <p><img class="vSign" src="images/icon-check.svg" alt="check-img">Unlimited websites</p>
+        <p><img class="vSign" src="images/icon-check.svg" alt="check-img">100% data ownership</p>
+        <p><img class="vSign" src="images/icon-check.svg" alt="check-img">Email reports</p>
+      </ul>
+      <button class="trialButton btn btn-sm col-4" type="button" name="button">Start my trial</button>
+    </div>
+  </main>
+
+
+
+  <div class="footer">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
+    Coded by <a href="#">Tomer Bourstein</a>.
+  </div>
+
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js" integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut" crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js" integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k" crossorigin="anonymous"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+  <script src="index.js" charset="utf-8"></script>
+</body>
+
+</html>

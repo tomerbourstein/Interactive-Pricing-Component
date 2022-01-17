@@ -1,0 +1,355 @@
+body {
+  background-image: url("images/bg-pattern.svg");
+  background-color: hsl(230, 100%, 99%);
+  background-repeat: no-repeat;
+  background-position: content-box;
+  background-size: 100% 70%;
+  text-align: center;
+  font-family: 'Manrope', sans-serif;
+}
+
+h1 {
+  font-size: 1.7rem;
+  font-weight: 800;
+  color: hsl(227, 35%, 25%);
+}
+
+/* header section */
+.header {
+  margin: 5% 30%;
+}
+
+.circles {
+  position: absolute;
+  top: 26px;
+  left: 550px;
+  z-index: -1
+}
+
+.signUp {
+  color: hsl(225, 20%, 60%);
+  font-size: 0.9rem;
+  line-height: 1.8;
+}
+
+/* main card section  */
+main {
+  font-size: 0.7rem;
+  color: hsl(225, 20%, 60%);
+  margin: 5% 30%;
+  padding: 0 0;
+  background-color: hsl(0, 0%, 100%);
+  border-radius: 8px;
+}
+
+hr {
+  width: 100%;
+  color: hsl(225, 20%, 60%);
+}
+
+ul {
+  padding-bottom: 0;
+  line-height: 0;
+}
+
+.pricePerPageViews {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 5% 7% 0;
+  font-size: 0.9rem;
+}
+
+.pageviewsClass {
+  letter-spacing: 2px;
+  font-weight: 700;
+}
+
+.priceClass {
+  display: flex;
+  align-items: center;
+}
+
+.priceChange {
+  font-size: 2.5rem;
+  font-weight: 700;
+  color: hsl(227, 35%, 25%);
+}
+
+.priceClassMobile {
+  display: none;
+  align-items: center;
+}
+
+.priceChangeMobile {
+  font-size: 2.5rem;
+  font-weight: 700;
+  color: hsl(227, 35%, 25%);
+}
+
+.range {
+  padding: 0 7% 5%;
+}
+
+#customRange {
+  width: 100%;
+  -webkit-appearance: none;
+  appearance: none;
+  height: 8px;
+  border-radius: 5px;
+  opacity: 0.7;
+  background: hsl(224, 65%, 95%);
+  outline: none;
+  background-image: -webkit-gradient(linear,
+      left top,
+      right top,
+      color-stop(0.50, hsl(174, 77%, 80%)),
+      color-stop(0.50, hsl(224, 65%, 95%)));
+}
+
+#customRange::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  appearance: none;
+  width: 35px;
+  height: 35px;
+  border-radius: 50%;
+  background: url("images/icon-slider.svg") center no-repeat, hsl(174, 86%, 45%);
+  box-shadow: 0px 8px 20px hsl(174, 86%, 45%);
+  cursor: pointer;
+  -webkit-transition: .2s;
+  transition: .2s;
+}
+
+#customRange::-moz-range-thumb {
+  width: 35px;
+  height: 35px;
+  border-radius: 50%;
+  background: url("images/icon-slider.svg") center no-repeat, hsl(174, 86%, 45%);
+  box-shadow: 0px 8px 20px hsl(174, 86%, 45%);
+  cursor: pointer;
+  -moz-transition: .2s;
+  transition: .2s;
+}
+
+#customRange::-webkit-slider-thumb:hover {
+  background: url("images/icon-slider.svg") center no-repeat, hsl(174, 77%, 80%);
+  box-shadow: 0px 8px 20px hsl(174, 77%, 80%);
+}
+
+#customRange::-moz-range-thumb:hover {
+  background: url("images/icon-slider.svg") center no-repeat, hsl(174, 77%, 80%);
+  box-shadow: 0px 8px 20px hsl(174, 77%, 80%);
+}
+
+.billingToggle {
+  line-height: 1;
+  display: flex;
+  justify-content: flex-end;
+  padding: 5% 7%;
+}
+
+.discount25 {
+  display: flex;
+  background-color: hsl(14, 92%, 95%);
+  color: hsl(15, 100%, 70%);
+  border-radius: 50px;
+  font-size: 0.6rem;
+  font-weight: bold;
+  height: 14px;
+  align-items: center;
+  margin-left: 0.8rem;
+}
+
+.shortTextDiscount25 {
+  display: none;
+  background-color: hsl(14, 92%, 95%);
+  color: hsl(15, 100%, 70%);
+  border-radius: 50px;
+  font-size: 0.6rem;
+  font-weight: bold;
+  height: 14px;
+  align-items: center;
+  margin-left: 0.8rem;
+}
+
+/* The switch - the box around the slider */
+.switch {
+  position: relative;
+  display: inline-block;
+  width: 30px;
+  height: 17px;
+}
+
+/* Hide default HTML checkbox */
+.switch input {
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+/* The slider */
+.slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: hsl(223, 50%, 87%);
+  -webkit-transition: .4s;
+  transition: .4s;
+}
+
+.slider:before {
+  position: absolute;
+  content: "";
+  height: 13px;
+  width: 13px;
+  left: 2px;
+  bottom: 2px;
+  background-color: white;
+  -webkit-transition: .4s;
+  transition: .4s;
+}
+
+input:checked+.slider {
+  background-color: hsl(174, 86%, 45%);
+}
+
+input:focus+.slider {
+  box-shadow: 0 0 1px hsl(174, 86%, 45%);
+}
+
+input:checked+.slider:before {
+  -webkit-transform: translateX(13px);
+  -ms-transform: translateX(13px);
+  transform: translateX(13px);
+}
+
+/* Rounded sliders */
+.slider.round {
+  border-radius: 34px;
+}
+
+.slider.round:before {
+  border-radius: 50%;
+}
+
+.yearlyBilling {
+  margin-left: 0.8rem;
+}
+
+.monthlyBilling {
+  margin-right: 0.8rem;
+}
+
+.attributes {
+  display: flex;
+  align-items: center;
+  padding: 3% 7% 0;
+  text-align: left;
+}
+
+.vSign {
+  margin-right: 0.8rem;
+}
+
+.trialButton {
+  height: 40px;
+  border-radius: 20px;
+  color: #BDCCFF;
+  font-family: 'Manrope', sans-serif;
+  font-size: 0.7rem;
+  font-weight: 100;
+  background-color: #293356;
+  text-decoration: none;
+  display: inline-block;
+  cursor: pointer;
+  text-align: center;
+}
+
+.trialButton:hover {
+  background: #FEECE7;
+  color: hsl(15, 100%, 70%);
+  border: solid hsl(14, 92%, 95%) 1px;
+  -webkit-border-radius: 20px;
+  -moz-border-radius: 20px;
+  border-radius: 20px;
+  text-decoration: none;
+}
+
+/* footer section */
+.footer {
+  font-size: 0.5rem;
+  justify-content: center;
+  width: 100%;
+}
+
+/* media queries section */
+@media only screen and (max-width: 600px) {
+  main {
+    margin: 80px 6%;
+  }
+
+  h1 {
+    font-size: 1.3rem;
+  }
+
+  .header {
+    margin: 15% 5%;
+  }
+
+  .circles {
+    left: 120px;
+  }
+
+  .signUp {
+    margin: 0 80px;
+    font-size: 0.8rem;
+  }
+
+  .pricePerPageViews {
+    display: block;
+  }
+
+  .pageviewsClass {
+    font-size: 0.8rem;
+  }
+
+  .priceClass {
+    display: none;
+  }
+
+  .priceClassMobile {
+    display: flex;
+    margin-top: 15%;
+    justify-content: center;
+  }
+
+  .priceChangeMobile {
+    font-size: 2.3rem;
+  }
+
+  .billingToggle {
+    padding: 5% 7% 7%;
+  }
+
+  .discount25 {
+    display: none;
+  }
+
+  .shortTextDiscount25 {
+    display: inline-flex;
+  }
+
+  .attributes {
+    display: block;
+    text-align: center;
+    padding: 3% 0 7%;
+  }
+
+  .trialButton {
+    margin-top: 5%;
+    width: 50%;
+  }
+}
